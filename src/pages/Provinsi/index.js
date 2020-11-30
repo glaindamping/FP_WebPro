@@ -4,7 +4,7 @@ import React from 'react'
 const Provinsi = () => {
     return (
         <div>
-            <h1>Register Page</h1>
+            <p>Jumlah Kasus Per Provinsi</p>
         </div>
     )
 }

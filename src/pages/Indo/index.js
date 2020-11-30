@@ -3,8 +3,10 @@ import React from 'react'
 const Indo = () => {
     return (
         <div>
-            <h1>Login Page</h1>
+            <p>Jumlah Kasus Indonesia</p>
         </div>
+
+ 
     )
 }
 
