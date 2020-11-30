@@ -1,9 +1,9 @@
   
 import React from 'react'
 import './App.css'
-import 'bootstrap/dist/css/boostrap.min.css';
 import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom'
 import { Global, Indo, Provinsi } from './pages'
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
     return (

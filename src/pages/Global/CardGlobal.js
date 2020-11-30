@@ -1,118 +1,48 @@
-import React, {useEffect } from "react";
-import Card from "react-bootstrap/Card"
-import CardDesk from "react-bootstrap/CardDeck";
-import "bootstrap/dist/css/boostrap.min.css"
-import axios from "axios";
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
+import Card from "react-bootstrap/Card";
+import CardDeck from "react-bootstrap/CardDeck";
 
-function App (){
+const CardGlobal = () => {
+    const [global, setData] = useState([]);
+   
     useEffect(() => {
       axios
-      .get ("https://covid19.mathdro.id/api")
-      .then(response=>{
-          console.log(res.data);
-      })
-      .catch(err => {
-          console.log(err)
-      });
-}, []);
-
+      .get("https://covid19.mathdro.id/api")
+      .then((response) => setData(response.data));
+      }, []);
+      console.log(global)
 return (
     <div>
-  <Card border="primary" style={{ width: '18rem' }}>
-    <Card.Header>Header</Card.Header>
+  <CardDeck>
+  <Card bg="danger" text="white">
     <Card.Body>
-      <Card.Title>Primary Card Title</Card.Title>
+      <Card.Title>Positif</Card.Title>
       <Card.Text>
-        Some quick example text to build on the card title and make up the bulk
-        of the card's content.
-      </Card.Text>
-    </Card.Body>
-  </Card>
-  <br />
 
-  <Card border="secondary" style={{ width: '18rem' }}>
-    <Card.Header>Header</Card.Header>
-    <Card.Body>
-      <Card.Title>Secondary Card Title</Card.Title>
-      <Card.Text>
-        Some quick example text to build on the card title and make up the bulk
-        of the card's content.
       </Card.Text>
     </Card.Body>
   </Card>
-  <br />
-
-  <Card border="success" style={{ width: '18rem' }}>
-    <Card.Header>Header</Card.Header>
+  <Card bg="secondary" text="white">
     <Card.Body>
-      <Card.Title>Success Card Title</Card.Title>
+      <Card.Title>Meninggal</Card.Title>
       <Card.Text>
-        Some quick example text to build on the card title and make up the bulk
-        of the card's content.
+        This card has supporting text below as a natural lead-in to additional
+        content.{' '}
       </Card.Text>
     </Card.Body>
   </Card>
-  <br />
-
-  <Card border="danger" style={{ width: '18rem' }}>
-    <Card.Header>Header</Card.Header>
+  <Card bg="success" text="white">
     <Card.Body>
-      <Card.Title>Danger Card Title</Card.Title>
+      <Card.Title>Sembuh</Card.Title>
       <Card.Text>
-        Some quick example text to build on the card title and make up the bulk
-        of the card's content.
+        This is a wider card with supporting text below as a natural lead-in to
+        additional content. This card has even longer content than the first to
+        show that equal height action.
       </Card.Text>
     </Card.Body>
   </Card>
-  <br />
-
-  <Card border="warning" style={{ width: '18rem' }}>
-    <Card.Header>Header</Card.Header>
-    <Card.Body>
-      <Card.Title>Warning Card Title</Card.Title>
-      <Card.Text>
-        Some quick example text to build on the card title and make up the bulk
-        of the card's content.
-      </Card.Text>
-    </Card.Body>
-  </Card>
-  <br />
-
-  <Card border="info" style={{ width: '18rem' }}>
-    <Card.Header>Header</Card.Header>
-    <Card.Body>
-      <Card.Title>Info Card Title</Card.Title>
-      <Card.Text>
-        Some quick example text to build on the card title and make up the bulk
-        of the card's content.
-      </Card.Text>
-    </Card.Body>
-  </Card>
-  <br />
-
-  <Card border="dark" style={{ width: '18rem' }}>
-    <Card.Header>Header</Card.Header>
-    <Card.Body>
-      <Card.Title>Dark Card Title</Card.Title>
-      <Card.Text>
-        Some quick example text to build on the card title and make up the bulk
-        of the card's content.
-      </Card.Text>
-    </Card.Body>
-  </Card>
-  <br />
-
-  <Card border="light" style={{ width: '18rem' }}>
-    <Card.Header>Header</Card.Header>
-    <Card.Body>
-      <Card.Title>Light Card Title</Card.Title>
-      <Card.Text>
-        Some quick example text to build on the card title and make up the bulk
-        of the card's content.
-      </Card.Text>
-    </Card.Body>
-  </Card>
-  <br />
+</CardDeck>
 </div>
 )
 }
