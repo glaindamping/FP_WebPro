@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import Card from "react-bootstrap/Card";
-import CardDeck from "react-bootstrap/CardDeck";
 import NumberFormat from "react-number-format";
 
 export default function CardGlobal(){
@@ -25,34 +23,22 @@ export default function CardGlobal(){
     }, []);
 
 return (
-  <div>
-<CardDeck>
-  <Card bg = 'danger' text='light'>
-    <Card.Body>
-      <Card.Title>Positif</Card.Title>
-      <Card.Text>
-      <NumberFormat value={confirmed} thousandSeparator={true} displayType={'text'}/>
-      </Card.Text>
-    </Card.Body>
-  </Card>
-  <Card bg = 'dark' text='light'>
-    <Card.Body>
-      <Card.Title>Deaths</Card.Title>
-      <Card.Text>
-      <NumberFormat value={deaths} thousandSeparator={true} displayType={'text'}/>
-      </Card.Text>
-    </Card.Body>
-  </Card>
-  <Card bg = 'success' text='light'>
-    <Card.Body>
-      <Card.Title>Recovered</Card.Title>
-      <Card.Text>
-      <NumberFormat value={recovered} thousandSeparator={true} displayType={'text'}/>             
-      </Card.Text>
-    </Card.Body>
-  </Card>
-</CardDeck>
-    </div>
+  <div className="container">
+  
+  <h1 className="card1">
+  <NumberFormat value={confirmed} thousandSeparator={true} displayType={'text'}/>
+  <p>Positif</p>
+  </h1>
+  <h1 className="card2">
+  <NumberFormat value={deaths} thousandSeparator={true} displayType={'text'}/>
+  <p>Deaths</p>
+  </h1>
+  <h1 className="card3">
+  <NumberFormat value={recovered} thousandSeparator={true} displayType={'text'}/>
+  <p>Recovered</p>
+  </h1>
+  
+  </div>
 
 )
 }

@@ -1,51 +1,76 @@
-/* .property-card1
-{
-  height:18em;
-  width:14em;
-  display:-webkit-box;
-  display:-ms-flexbox;
-  display:flex;
-  -webkit-box-orient:vertical;
-  -webkit-box-direction:normal;
-  -ms-flex-direction:column;
-  flex-direction:column;
-  position:relative;
-  -webkit-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-  -o-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-  transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-  border-radius:16px;
-  overflow:hidden;
-  -webkit-box-shadow:  15px 15px 27px #d61204, -15px -15px 27px #ffffff;
-  box-shadow:  15px 15px 27px #e1e1e3, -15px -15px 27px #ffffff;
-} */
-
-
-
-.card {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  border-radius: 18px;
-  background: white;
+.card1{
+  font-size: 25px  ;
+  width: 250px;
+  height: 150px;
   text-align: center;
-  height: 80pxpx;
-  width: 10px;
+  margin: 2px;
+  padding: 40px;
+  border-radius: 10px;
+  border-width: px;
+  border-color: black;
+  font-weight: bold;
+  background-color:rgb(207, 24, 0);
+  color: rgb(255, 255, 255);
 }
 
-/* .container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 50px 0;
-} */
-
-.infected {
-  border-bottom: 10px solid rgba(0, 0, 255, 0.5);
+.card2{
+  font-size: 25px  ;
+  width: 250px;
+  height: 150px;
+  text-align: center;
+  margin: 2px;
+  padding: 40px;
+  border-radius: 10px;
+  border-width: px;
+  border-color: black;
+  font-weight: bold;
+  background-color:rgb(61, 61, 61);
+  color: rgb(255, 255, 255);
 }
 
-.recovered{
-  border-bottom: 10px solid rgba(0, 255, 0, 0.5);
+.card3{
+  font-size: 25px ;
+  width: 250px;
+  height: 150px;
+  text-align: center;
+  margin: 2px;
+  padding: 40px;
+  border-radius: 10px;
+  border-width: px;
+  border-color: black;
+  font-weight: bold;
+  background-color:rgb(5, 165, 0);
+  color: rgb(255, 255, 255);
+}
+.container{
+display: flex;
+align-items: left;
+justify-content: left;
 }
 
-.deaths{
-  border-bottom: 10px solid rgba(255, 0, 0, 0.5);
+table tbody{
+  overflow-y: auto;
+  width: 100%;
+}
+table thead,
+table tbody,
+table tr,
+table td,
+table th {
+    display: block;
+    /* background-color: red; */
+}
+table tbody td,
+table tbody th,
+table thead>tr>th {
+  float: left;
+  position: relative;
+}
+tr:hover{
+  background-color: red;
+}
+table>thead>tr>th ::after {
+  content: '';
+  clear: both;
+  display: block;
 }
