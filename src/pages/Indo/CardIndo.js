@@ -4,19 +4,19 @@ import Card from "react-bootstrap/Card";
 import CardDeck from "react-bootstrap/CardDeck";
 import NumberFormat from "react-number-format";
 
-export default function CardGlobal(){
+export default function CardIndo(){
   const [confirmed, setConfirmed] = useState("");
   const [recovered, setRecovered] = useState("");
   const [deaths, setDeaths] = useState("");
    
     useEffect(() => {
       axios
-      .get("https://covid19.mathdro.id/api")
+      .get("https://indonesia-covid-19.mathdro.id/api")
       .then(response => {
         console.log(response)
-        setConfirmed(response.data.confirmed.value)
-        setRecovered(response.data.recovered.value)
-        setDeaths(response.data.deaths.value)
+        setConfirmed(response.data.perawatan)
+        setRecovered(response.data.sembuh)
+        setDeaths(response.data.meninggal)
         
       })
       .catch(err => {
@@ -27,11 +27,11 @@ export default function CardGlobal(){
 return (
   <div>
 <CardDeck>
-  <Card bg = 'danger' text='light'>
+  <Card bg = 'danger' text='light'prefix={','}>
     <Card.Body>
       <Card.Title>Positif</Card.Title>
       <Card.Text>
-      <NumberFormat value={confirmed} thousandSeparator={true} displayType={'text'}/>
+        <NumberFormat value={confirmed} thousandSeparator={true} displayType={'text'}/>
       </Card.Text>
     </Card.Body>
   </Card>
@@ -47,7 +47,7 @@ return (
     <Card.Body>
       <Card.Title>Recovered</Card.Title>
       <Card.Text>
-      <NumberFormat value={recovered} thousandSeparator={true} displayType={'text'}/>             
+      <NumberFormat value={recovered} thousandSeparator={true} displayType={'text'}/>         
       </Card.Text>
     </Card.Body>
   </Card>

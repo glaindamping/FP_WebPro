@@ -8,7 +8,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 function App() {
     return (
         <Router>
-            <div class="container">
+            <div>
             <h1> Covid Tracker</h1>
                 <nav>  
                     <ul>
@@ -24,7 +24,7 @@ function App() {
                         </li>
                         <li>
                             <Link to="/Provinsi">
-                                       Pronvinsi
+                                       Provinsi
                             </Link>
                         </li>
                     </ul>

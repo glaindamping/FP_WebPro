@@ -1,94 +1,51 @@
-/* body {
-  background: #ffffff;
-  }
-  .App {
-  margin: 1em;
-  font-family: "Avenir", "Arial", sans-serif;
-  }
-  .list {
-  list-style: none;
-  }
-  .list-item {
-  padding: 1em;
-  display: flex;
-  flex: 1;
-  align-items: center;
-  border: 0.25em solid #ffffff;
-  margin-bottom: 1em;
-  }
-  .list-item-image-container {
-    flex: 1;
-  }
-  .list-item-image-container > img {
-    height: 4em;
-  }
-  .list-item-name {
-    flex: 3;
-  }
-  .list-item-power {
-    font-weight: bolder;
-    color: #ff0000;
-  } */
-/*   
-  .header-container {
-    margin: 15px;
-    background-color: yellow;
-    border-width: 2px;
-    border-color: black;
-    border-style: solid;
-  }
-  .card-container {
-    margin: 10px;
-    padding: 10px;
-    border-radius: 10px;
-    border-width: 3px;
-    border-color: black;
-    border-style: solid;
-    font-weight: bold;
-  } */
-  @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-body{
-  height: 100vh;
-  font-family: 'Poppins', sans-serif;
-  display: flex;
- 
-}
-/* body:after{
-  position: absolute;
-  content: "";
-  background: #eb5191;
-  width: 100%;
-  height: 50%;
-  top: 0;
-}
-body:before{
-  position: absolute;
-  content: "";
-  background: #fff;
-  width: 100%;
-  height: 50%;
-  bottom: 0;
+/* .property-card1
+{
+  height:18em;
+  width:14em;
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display:flex;
+  -webkit-box-orient:vertical;
+  -webkit-box-direction:normal;
+  -ms-flex-direction:column;
+  flex-direction:column;
+  position:relative;
+  -webkit-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  border-radius:16px;
+  overflow:hidden;
+  -webkit-box-shadow:  15px 15px 27px #d61204, -15px -15px 27px #ffffff;
+  box-shadow:  15px 15px 27px #e1e1e3, -15px -15px 27px #ffffff;
 } */
+
+
+
+.card {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  border-radius: 18px;
+  background: white;
+  text-align: center;
+  height: 80pxpx;
+  width: 10px;
+}
+
 /* .container {
-  justify-items: center;
-  width: 680%;
-  position: center;
-  margin: 0 auto;
-    border-radius: 24px;
-    background: #F6F5F0;
-    padding: 2%;
-    box-shadow: 0px 10px 6px -8px rgba(0,0,0,0.75);
-} */
-
-/* .globalcontainer{
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-items: center;
-  width: 60%;
-  position: center;
-  margin: 0 auto;
-    border-radius: 24px;
-    background: #a33412;
-    padding: 2%;
-    box-shadow: 0px 10px 6px -8px rgba(0,0,0,0.75);
+  margin: 50px 0;
 } */
 
+.infected {
+  border-bottom: 10px solid rgba(0, 0, 255, 0.5);
+}
+
+.recovered{
+  border-bottom: 10px solid rgba(0, 255, 0, 0.5);
+}
+
+.deaths{
+  border-bottom: 10px solid rgba(255, 0, 0, 0.5);
+}
