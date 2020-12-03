@@ -2,13 +2,12 @@ import React from 'react'
 import './App.css'
 import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom'
 import { Global, Indo, Provinsi } from './pages'
-import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
     return (
         <Router>
-            <div>
-            <h1> Covid Tracker</h1>
+            <div className="background">
+            <h1 className="text"> Covid Tracker</h1>
                 <nav>  
                     <ul>
                         <li>

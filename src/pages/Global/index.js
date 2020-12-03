@@ -3,8 +3,8 @@ import CardGlobal from './CardGlobal';
 
 const Global = () =>{
     return(
-        <div>
-            <p>Jumlah Kasus Seluruh Dunia</p>
+        <div className>
+            <h3>Jumlah Kasus Seluruh Dunia</h3>
             <CardGlobal/>
        </div>
     )
