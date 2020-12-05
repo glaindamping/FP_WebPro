@@ -23,8 +23,45 @@ export default function CardGlobal(){
     }, []);
 
 return (
-  <div className="container">
+//   <div>
+//       <center>
+//   <div className="container panel">
   
+//   <div className="card round text-center">
+//       <div className="card-body">
+//           <div className="row">
+//               <div className="col-lg-3 col-md-3">
+//                   <div className="card mycard">
+//                       <div className="card-body">
+//                           <h2 className="card-title">Positif</h2>
+//                           <h4 className="mt-4"><NumberFormat value={confirmed} thousandSeparator={true} displayType={'text'}/> Orang</h4>
+//                       </div>
+//                   </div>
+//               </div>
+//               <div className="col-lg-3 col-md-3">
+//                   <div className="card mycard">
+//                       <div className="card-body">
+//                           <h2 className="card-title">Sembuh</h2>
+//                           <h4 className="mt-4"><NumberFormat value={recovered} thousandSeparator={true} displayType={'text'}/> Orang</h4>
+//                       </div>
+//                   </div>
+//               </div>
+//               <div className="col-lg-3 col-md-3">
+//                   <div className="card mycard">
+//                       <div className="card-body">
+//                           <h2 className="card-title">Meninggal</h2>
+//                           <h4 className="mt-4"><NumberFormat value={deaths} thousandSeparator={true} displayType={'text'}/> Orang</h4>
+//                       </div>
+//                   </div>
+//               </div>
+//           </div>
+//       </div>
+//   </div>
+ 
+// </div>
+// </center>
+// </div>
+  <div className="container">
   <h1 className="card1">
   <NumberFormat value={confirmed} thousandSeparator={true} displayType={'text'}/>
   <p>Positif</p>
@@ -37,8 +74,8 @@ return (
   <NumberFormat value={recovered} thousandSeparator={true} displayType={'text'}/>
   <p>Recovered</p>
   </h1>
-  
   </div>
+
 
 )
 }

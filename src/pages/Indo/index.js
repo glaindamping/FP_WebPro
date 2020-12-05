@@ -4,9 +4,11 @@ import CardIndo from './CardIndo';
 const Indo = () => {
     return (
         <div>
-            <p>Jumlah Kasus Indonesia</p>
-            <CardIndo/>
-        </div>
+       <div className="container mypanel text-center">
+      <h1 style={{ fontFamily: "Sen", fontSize: "60px" }}> Kasus di Indonesia</h1>
+      </div>
+        <CardIndo/>
+         </div>
 
  
     )

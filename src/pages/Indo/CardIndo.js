@@ -31,11 +31,11 @@ return (
   </h1>
   <h1 className="card2">
   <NumberFormat value={deaths} thousandSeparator={true} displayType={'text'}/>
-  <p>Deaths</p>
+  <p>Meninggal</p>
   </h1>
   <h1 className="card3">
   <NumberFormat value={recovered} thousandSeparator={true} displayType={'text'}/>
-  <p>Recovered</p>
+  <p>Sembuh</p>
   </h1>
   
   </div>

@@ -3,31 +3,34 @@ import './App.css'
 import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom'
 import { Global, Indo, Provinsi } from './pages'
 
+
 function App() {
     return (
         <Router>
-            <div className="background">
-            <h1 className="text"> Covid Tracker</h1>
-                <nav>  
+            <div className='background'>
+                <nav className='nav'>  
+                <h1 className='text'> Covid-19 Tracker</h1>
                     <ul>
                         <li>
-                            <Link to="/Global">
-                                Global
-                            </Link>
+                        <Link to="/Global">
+                        Global
+                        </Link>
                         </li>
                         <li>
-                            <Link to="/Indo">
-                                   Indonesia
-                            </Link>
+                        <Link to="/Indo">
+                        Indonesia
+                        </Link>
                         </li>
                         <li>
-                            <Link to="/Provinsi">
-                                       Provinsi
-                            </Link>
+                        <Link to="/Provinsi">
+                        Provinsi
+                        </Link>
                         </li>
-                    </ul>
+                    </ul> 
+
                 </nav>
-            </div>
+
+        <center>
             <Switch>
                 <Route path="/Provinsi">
                     <Provinsi />
@@ -39,8 +42,11 @@ function App() {
                     <Global />
                 </Route>
             </Switch>
+            </center>
+
+            
+        </div>
         </Router>
-        
     )
 }
 
