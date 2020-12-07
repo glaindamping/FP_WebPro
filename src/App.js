@@ -9,6 +9,7 @@ function App() {
     return (
         <Router>
             <div className='background'>
+              <div className='home'>
                 <nav className='nav'>  
                 <h1 className='text'> Covid-19 Tracker</h1>
                     <ul>
@@ -53,6 +54,7 @@ function App() {
             </Switch>
             </center>
         </div>
+        </div>
         </Router>
     )
 }
@@ -85,10 +87,11 @@ const Homepage = () => {
         </Carousel.Item>
       </Carousel>
       
-      <div className="mt-4">
+      <div className="mt-5">
       <p className="welcome"><i>made by Damping, Glainhard A.A</i></p>
       </div>
       </div>
+      
     )
 }
 export default App
