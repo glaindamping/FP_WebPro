@@ -2,7 +2,7 @@
 Covid Track is a minimalist app for tracking Covid-19 information and provide useful information about the virus. Current focus is to show summary data from Global and Indonesia, for other countries will be updated in future release.
 
 ## Showcase 
-![showcaseimage](https://github.com/Vinxent9/CovidTrack/blob/master/assets/showcase.jpg)
+![showcaseimage](https://github.com/glaindamping/FP_WebPro/tree/main/src/showcase/Untitled-1.png)
 
 
 
