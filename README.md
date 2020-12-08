@@ -4,13 +4,6 @@ Covid Track is a minimalist app for tracking Covid-19 information and provide us
 ## Showcase 
 ![showcaseimage](https://github.com/glaindamping/FP_WebPro/blob/main/src/showcase/Untitled-1.png)
 
-
-
-
-
-
-
-
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
