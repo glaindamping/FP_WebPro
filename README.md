@@ -1,3 +1,16 @@
+## CovidTrack
+Covid Track is a minimalist app for tracking Covid-19 information and provide useful information about the virus. Current focus is to show summary data from Global and Indonesia, for other countries will be updated in future release.
+
+## Showcase 
+![showcaseimage](https://github.com/Vinxent9/CovidTrack/blob/master/assets/showcase.jpg)
+
+
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
