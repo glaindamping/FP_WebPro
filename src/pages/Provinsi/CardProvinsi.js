@@ -53,7 +53,7 @@ return (
   //      </div>
   //   </div>
 <center>
-<table border="10">
+<table border="1">
                 <tr>
                     <th><center>No.</center></th>
                     <th><center>Provinsi</center></th>
